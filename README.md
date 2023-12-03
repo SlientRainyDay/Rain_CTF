@@ -6,7 +6,7 @@
 >
 > 考研初试结束(2023/12/24)之后在学习技术之余继续打一下CTF，弥补一下没有进过几次线下的遗憾。
 >
-> 关于CTF之外技术的学习请移步至[Rain_learning](https://github.com/SlientRainyDay/Rain_learning)
+> 关于CTF之外技术的学习记录请移步至[Rain_learning](https://github.com/SlientRainyDay/Rain_learning)
 
 
 
