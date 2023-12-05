@@ -1,0 +1,2 @@
+An4er, who wants to learn how to develop programs, wrote a program to detect whether the website is active. 
+Can you find the program loopholes and become an administrator?

@@ -1,0 +1,2 @@
+Ancient CGI, but very new Python.
+This question does not require blasting or scanning anything, you only need to pay attention to CGI

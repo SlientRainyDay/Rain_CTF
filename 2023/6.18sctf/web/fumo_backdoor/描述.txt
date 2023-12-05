@@ -1,0 +1,8 @@
+FUMO在你的网站上留下了后门 ᗜˬᗜ，她是怎么使用这个后门的捏？ ᗜˬᗜ（flag 在 /flag）
+
+
+Oops, looks like FUMO left a backdoor on your website ᗜˬᗜ! I wonder how she’s gonna use it, teehee~ (flag in /flag)
+
+http://182.92.6.230:18080
+http://47.99.77.113:18080/
+

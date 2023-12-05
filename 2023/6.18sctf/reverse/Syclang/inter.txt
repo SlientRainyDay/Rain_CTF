@@ -1,0 +1,776 @@
+STRUCT exp :
+  ARRAY .key(int)[24]<+0>
+  ARRAY .L(int)[8]<+192>
+  ARRAY .R(int)[8]<+256>
+  ARRAY .X(int)[8]<+320>
+
+
+FUNCTION read - 8 :
+  PARAM var2<+8>
+LABEL Flabelread :
+
+FUNCTION writes - 0 :
+LABEL Flabelwrites :
+
+FUNCTION writef - 0 :
+LABEL Flabelwritef :
+
+FUNCTION exit - 0 :
+LABEL Flabelexit :
+
+FUNCTION main - 1640 :
+  ARRAY var11(char)[24]<+0>
+  STRUCT var22(exp)<+488>
+  STRUCT var23(exp)<+872>
+  STRUCT var24(exp)<+1256>
+  STRUCT var25(exp)<+1640>
+  ARG var11<+24>
+  temp1 := CALL read
+  temp2 := #0
+  var15<+56> := temp2
+LABEL label4 :
+  temp4 := #24
+  IF var15<+56> < temp4 GOTO label3
+  GOTO label2
+LABEL label3 :
+  temp5 := #0
+  var12<+32> := temp5
+  var16<+64> := var15<+56>
+#!tempa := {#1}*{var16<+64>}
+  var12<+32> ::= var11<+1><+tempa>
+  temp6 := #23
+  temp7 := temp6 - var15<+56>
+  var18<+80> := temp7
+#!tempa := {#8}*{var18<+80>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var12<+32>
+  temp3 := #1
+  var15<+56> := var15<+56> + temp3
+  GOTO label4
+LABEL label2 :
+  temp8 := #23
+  var15<+56> := temp8
+LABEL label11 :
+  temp10 := #0
+  IF var15<+56> > temp10 GOTO label10
+  GOTO label9
+LABEL label10 :
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var22(@exp.key[0])<+8><+488><+tempa>
+  temp11 := #1
+  temp12 := var15<+56> - temp11
+  var16<+64> := temp12
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.key[0])<+8><+488><+tempa>
+  temp13 := var19<+88> - var17<+72>
+  var21<+104> := temp13
+#!tempa := {#8}*{var15<+56>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var21<+104>
+  temp9 := #1
+  var15<+56> := var15<+56> - temp9
+  GOTO label11
+LABEL label9 :
+  temp15 := #0
+  var22(@exp.L[0])<+200><+488> := temp15
+  temp17 := #8
+  var22(@exp.R[0])<+264><+488> := temp17
+  temp19 := #11
+  var22(@exp.X[0])<+328><+488> := temp19
+  temp21 := #15
+  var22(@exp.L[1])<+208><+488> := temp21
+  temp23 := #23
+  var22(@exp.R[1])<+272><+488> := temp23
+  temp25 := #0
+  temp26 := #13
+  temp27 := temp25 - temp26
+  var22(@exp.X[1])<+336><+488> := temp27
+  temp29 := #2
+  var22(@exp.L[2])<+216><+488> := temp29
+  temp31 := #11
+  var22(@exp.R[2])<+280><+488> := temp31
+  temp33 := #17
+  var22(@exp.X[2])<+344><+488> := temp33
+  temp35 := #10
+  var22(@exp.L[3])<+224><+488> := temp35
+  temp37 := #20
+  var22(@exp.R[3])<+288><+488> := temp37
+  temp39 := #0
+  temp40 := #19
+  temp41 := temp39 - temp40
+  var22(@exp.X[3])<+352><+488> := temp41
+  temp43 := #6
+  var22(@exp.L[4])<+232><+488> := temp43
+  temp45 := #13
+  var22(@exp.R[4])<+296><+488> := temp45
+  temp47 := #23
+  var22(@exp.X[4])<+360><+488> := temp47
+  temp49 := #9
+  var22(@exp.L[5])<+240><+488> := temp49
+  temp51 := #21
+  var22(@exp.R[5])<+304><+488> := temp51
+  temp53 := #0
+  temp54 := #29
+  temp55 := temp53 - temp54
+  var22(@exp.X[5])<+368><+488> := temp55
+  temp57 := #1
+  var22(@exp.L[6])<+248><+488> := temp57
+  temp59 := #19
+  var22(@exp.R[6])<+312><+488> := temp59
+  temp61 := #31
+  var22(@exp.X[6])<+376><+488> := temp61
+  temp63 := #4
+  var22(@exp.L[7])<+256><+488> := temp63
+  temp65 := #17
+  var22(@exp.R[7])<+320><+488> := temp65
+  temp67 := #0
+  temp68 := #37
+  temp69 := temp67 - temp68
+  var22(@exp.X[7])<+384><+488> := temp69
+  temp70 := #0
+  var15<+56> := temp70
+LABEL label43 :
+  temp72 := #8
+  IF var15<+56> < temp72 GOTO label42
+  GOTO label41
+LABEL label42 :
+#!tempa := {#8}*{var15<+56>}
+  var16<+64> := var22(@exp.L[0])<+200><+488><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var18<+80> := var22(@exp.R[0])<+264><+488><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var20<+96> := var22(@exp.X[0])<+328><+488><+tempa>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.key[0])<+8><+488><+tempa>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var22(@exp.key[0])<+8><+488><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+  var19<+88> := var19<+88> - var20<+96>
+#!tempa := {#8}*{var16<+64>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var17<+72>
+#!tempa := {#8}*{var18<+80>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var19<+88>
+  temp71 := #1
+  var15<+56> := var15<+56> + temp71
+  GOTO label43
+LABEL label41 :
+  temp75 := #1
+  var15<+56> := temp75
+LABEL label54 :
+  temp77 := #24
+  IF var15<+56> < temp77 GOTO label53
+  GOTO label52
+LABEL label53 :
+#!tempa := {#8}*{var15<+56>}
+  var17<+72> := var22(@exp.key[0])<+8><+488><+tempa>
+  temp78 := #1
+  temp79 := var15<+56> - temp78
+  var16<+64> := temp79
+#!tempa := {#8}*{var16<+64>}
+  var20<+96> := var22(@exp.key[0])<+8><+488><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+#!tempa := {#8}*{var15<+56>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var17<+72>
+  temp76 := #1
+  var15<+56> := var15<+56> + temp76
+  GOTO label54
+LABEL label52 :
+  temp81 := #0
+  var15<+56> := temp81
+LABEL label61 :
+  temp83 := #23
+  IF var15<+56> < temp83 GOTO label60
+  GOTO label59
+LABEL label60 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var16<+64>}
+  var12<+32> := var22(@exp.key[0])<+8><+488><+tempa>
+  temp84 := #1
+  temp85 := var15<+56> + temp84
+  var18<+80> := temp85
+#!tempa := {#8}*{var18<+80>}
+  var13<+40> := var22(@exp.key[0])<+8><+488><+tempa>
+  temp86 := #0
+  var13<+40> := temp86
+  temp87 := var12<+32> ^ var13<+40>
+  var14<+48> := temp87
+#!tempa := {#8}*{var16<+64>}
+  var22(@exp.key[0])<+8><+488><+tempa> := var14<+48>
+  temp82 := #1
+  var15<+56> := var15<+56> + temp82
+  GOTO label61
+LABEL label59 :
+  temp89 := #0
+  var24(@exp.L[0])<+200><+1256> := temp89
+  temp91 := #12
+  var24(@exp.R[0])<+264><+1256> := temp91
+  temp93 := #0
+  temp94 := #19
+  temp95 := temp93 - temp94
+  var24(@exp.X[0])<+328><+1256> := temp95
+  temp97 := #9
+  var24(@exp.L[1])<+208><+1256> := temp97
+  temp99 := #10
+  var24(@exp.R[1])<+272><+1256> := temp99
+  temp101 := #0
+  temp102 := #10
+  temp103 := temp101 - temp102
+  var24(@exp.X[1])<+336><+1256> := temp103
+  temp105 := #9
+  var24(@exp.L[2])<+216><+1256> := temp105
+  temp107 := #12
+  var24(@exp.R[2])<+280><+1256> := temp107
+  temp109 := #3
+  var24(@exp.X[2])<+344><+1256> := temp109
+  temp111 := #8
+  var24(@exp.L[3])<+224><+1256> := temp111
+  temp113 := #19
+  var24(@exp.R[3])<+288><+1256> := temp113
+  temp115 := #0
+  temp116 := #11
+  temp117 := temp115 - temp116
+  var24(@exp.X[3])<+352><+1256> := temp117
+  temp119 := #10
+  var24(@exp.L[4])<+232><+1256> := temp119
+  temp121 := #12
+  var24(@exp.R[4])<+296><+1256> := temp121
+  temp123 := #0
+  temp124 := #9
+  temp125 := temp123 - temp124
+  var24(@exp.X[4])<+360><+1256> := temp125
+  temp127 := #9
+  var24(@exp.L[5])<+240><+1256> := temp127
+  temp129 := #13
+  var24(@exp.R[5])<+304><+1256> := temp129
+  temp131 := #3
+  var24(@exp.X[5])<+368><+1256> := temp131
+  temp133 := #1
+  var24(@exp.L[6])<+248><+1256> := temp133
+  temp135 := #22
+  var24(@exp.R[6])<+312><+1256> := temp135
+  temp137 := #0
+  temp138 := #19
+  temp139 := temp137 - temp138
+  var24(@exp.X[6])<+376><+1256> := temp139
+  temp141 := #0
+  var24(@exp.L[7])<+256><+1256> := temp141
+  temp143 := #23
+  var24(@exp.R[7])<+320><+1256> := temp143
+  temp145 := #7
+  var24(@exp.X[7])<+384><+1256> := temp145
+  temp147 := #12
+  var24(@exp.key[0])<+8><+1256> := temp147
+  temp149 := #31
+  var24(@exp.key[1])<+16><+1256> := temp149
+  temp151 := #31
+  var24(@exp.key[2])<+24><+1256> := temp151
+  temp153 := #31
+  var24(@exp.key[3])<+32><+1256> := temp153
+  temp155 := #31
+  var24(@exp.key[4])<+40><+1256> := temp155
+  temp157 := #31
+  var24(@exp.key[5])<+48><+1256> := temp157
+  temp159 := #31
+  var24(@exp.key[6])<+56><+1256> := temp159
+  temp161 := #31
+  var24(@exp.key[7])<+64><+1256> := temp161
+  temp163 := #42
+  var24(@exp.key[8])<+72><+1256> := temp163
+  temp165 := #46
+  var24(@exp.key[9])<+80><+1256> := temp165
+  temp167 := #45
+  var24(@exp.key[10])<+88><+1256> := temp167
+  temp169 := #45
+  var24(@exp.key[11])<+96><+1256> := temp169
+  temp171 := #20
+  var24(@exp.key[12])<+104><+1256> := temp171
+  temp173 := #23
+  var24(@exp.key[13])<+112><+1256> := temp173
+  temp175 := #23
+  var24(@exp.key[14])<+120><+1256> := temp175
+  temp177 := #23
+  var24(@exp.key[15])<+128><+1256> := temp177
+  temp179 := #23
+  var24(@exp.key[16])<+136><+1256> := temp179
+  temp181 := #23
+  var24(@exp.key[17])<+144><+1256> := temp181
+  temp183 := #23
+  var24(@exp.key[18])<+152><+1256> := temp183
+  temp185 := #12
+  var24(@exp.key[19])<+160><+1256> := temp185
+  temp187 := #12
+  var24(@exp.key[20])<+168><+1256> := temp187
+  temp189 := #12
+  var24(@exp.key[21])<+176><+1256> := temp189
+  temp191 := #0
+  temp192 := #7
+  temp193 := temp191 - temp192
+  var24(@exp.key[22])<+184><+1256> := temp193
+  temp195 := #0
+  var24(@exp.key[23])<+192><+1256> := temp195
+  temp196 := #23
+  var15<+56> := temp196
+LABEL label118 :
+  temp198 := #0
+  IF var15<+56> > temp198 GOTO label117
+  GOTO label116
+LABEL label117 :
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var24(@exp.key[0])<+8><+1256><+tempa>
+  temp199 := #1
+  temp200 := var15<+56> - temp199
+  var16<+64> := temp200
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var24(@exp.key[0])<+8><+1256><+tempa>
+  temp201 := var19<+88> - var17<+72>
+  var21<+104> := temp201
+#!tempa := {#8}*{var15<+56>}
+  var24(@exp.key[0])<+8><+1256><+tempa> := var21<+104>
+  temp197 := #1
+  var15<+56> := var15<+56> - temp197
+  GOTO label118
+LABEL label116 :
+  temp202 := #0
+  var15<+56> := temp202
+LABEL label126 :
+  temp204 := #8
+  IF var15<+56> < temp204 GOTO label125
+  GOTO label124
+LABEL label125 :
+#!tempa := {#8}*{var15<+56>}
+  var16<+64> := var24(@exp.L[0])<+200><+1256><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var18<+80> := var24(@exp.R[0])<+264><+1256><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var20<+96> := var24(@exp.X[0])<+328><+1256><+tempa>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var24(@exp.key[0])<+8><+1256><+tempa>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var24(@exp.key[0])<+8><+1256><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+  var19<+88> := var19<+88> - var20<+96>
+#!tempa := {#8}*{var16<+64>}
+  var24(@exp.key[0])<+8><+1256><+tempa> := var17<+72>
+#!tempa := {#8}*{var18<+80>}
+  var24(@exp.key[0])<+8><+1256><+tempa> := var19<+88>
+  temp203 := #1
+  var15<+56> := var15<+56> + temp203
+  GOTO label126
+LABEL label124 :
+  temp207 := #1
+  var15<+56> := temp207
+LABEL label137 :
+  temp209 := #24
+  IF var15<+56> < temp209 GOTO label136
+  GOTO label135
+LABEL label136 :
+#!tempa := {#8}*{var15<+56>}
+  var17<+72> := var24(@exp.key[0])<+8><+1256><+tempa>
+  temp210 := #1
+  temp211 := var15<+56> - temp210
+  var16<+64> := temp211
+#!tempa := {#8}*{var16<+64>}
+  var20<+96> := var24(@exp.key[0])<+8><+1256><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+#!tempa := {#8}*{var15<+56>}
+  var24(@exp.key[0])<+8><+1256><+tempa> := var17<+72>
+  temp208 := #1
+  var15<+56> := var15<+56> + temp208
+  GOTO label137
+LABEL label135 :
+  temp214 := #252
+  var23(@exp.key[0])<+8><+872> := temp214
+  temp216 := #352
+  var23(@exp.key[1])<+16><+872> := temp216
+  temp218 := #484
+  var23(@exp.key[2])<+24><+872> := temp218
+  temp220 := #470
+  var23(@exp.key[3])<+32><+872> := temp220
+  temp222 := #496
+  var23(@exp.key[4])<+40><+872> := temp222
+  temp224 := #487
+  var23(@exp.key[5])<+48><+872> := temp224
+  temp226 := #539
+  var23(@exp.key[6])<+56><+872> := temp226
+  temp228 := #585
+  var23(@exp.key[7])<+64><+872> := temp228
+  temp230 := #447
+  var23(@exp.key[8])<+72><+872> := temp230
+  temp232 := #474
+  var23(@exp.key[9])<+80><+872> := temp232
+  temp234 := #577
+  var23(@exp.key[10])<+88><+872> := temp234
+  temp236 := #454
+  var23(@exp.key[11])<+96><+872> := temp236
+  temp238 := #466
+  var23(@exp.key[12])<+104><+872> := temp238
+  temp240 := #345
+  var23(@exp.key[13])<+112><+872> := temp240
+  temp242 := #344
+  var23(@exp.key[14])<+120><+872> := temp242
+  temp244 := #486
+  var23(@exp.key[15])<+128><+872> := temp244
+  temp246 := #501
+  var23(@exp.key[16])<+136><+872> := temp246
+  temp248 := #423
+  var23(@exp.key[17])<+144><+872> := temp248
+  temp250 := #490
+  var23(@exp.key[18])<+152><+872> := temp250
+  temp252 := #375
+  var23(@exp.key[19])<+160><+872> := temp252
+  temp254 := #257
+  var23(@exp.key[20])<+168><+872> := temp254
+  temp256 := #203
+  var23(@exp.key[21])<+176><+872> := temp256
+  temp258 := #265
+  var23(@exp.key[22])<+184><+872> := temp258
+  temp260 := #125
+  var23(@exp.key[23])<+192><+872> := temp260
+  temp261 := #0
+  var15<+56> := temp261
+LABEL label168 :
+  temp263 := #24
+  IF var15<+56> < temp263 GOTO label167
+  GOTO label166
+LABEL label167 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var23(@exp.key[0])<+8><+872><+tempa>
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var24(@exp.key[0])<+8><+1256><+tempa>
+  temp264 := var17<+72> ^ var19<+88>
+  var21<+104> := temp264
+#!tempa := {#8}*{var15<+56>}
+  var23(@exp.key[0])<+8><+872><+tempa> := var21<+104>
+  temp262 := #1
+  var15<+56> := var15<+56> + temp262
+  GOTO label168
+LABEL label166 :
+  temp265 := #0
+  var15<+56> := temp265
+LABEL label176 :
+  temp267 := #8
+  IF var15<+56> < temp267 GOTO label175
+  GOTO label174
+LABEL label175 :
+  temp268 := var15<+56> + var15<+56>
+  temp269 := temp268 + var15<+56>
+  var16<+64> := temp269
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.key[0])<+8><+488><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var23(@exp.X[0])<+328><+872><+tempa> := var17<+72>
+  temp266 := #1
+  var15<+56> := var15<+56> + temp266
+  GOTO label176
+LABEL label174 :
+  temp270 := #23
+  var15<+56> := temp270
+LABEL label181 :
+  temp272 := #0
+  IF var15<+56> > temp272 GOTO label180
+  GOTO label179
+LABEL label180 :
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var23(@exp.key[0])<+8><+872><+tempa>
+  var16<+64> := var15<+56>
+  temp273 := #1
+  var16<+64> := var16<+64> - temp273
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var23(@exp.key[0])<+8><+872><+tempa>
+  temp275 := var19<+88> - var17<+72>
+  var21<+104> := temp275
+#!tempa := {#8}*{var15<+56>}
+  var23(@exp.key[0])<+8><+872><+tempa> := var21<+104>
+  temp271 := #1
+  var15<+56> := var15<+56> - temp271
+  GOTO label181
+LABEL label179 :
+  temp276 := #0
+  var15<+56> := temp276
+LABEL label190 :
+  temp278 := #8
+  IF var15<+56> < temp278 GOTO label189
+  GOTO label188
+LABEL label189 :
+#!tempa := {#8}*{var15<+56>}
+  var16<+64> := var22(@exp.L[0])<+200><+488><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var18<+80> := var22(@exp.R[0])<+264><+488><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var20<+96> := var23(@exp.X[0])<+328><+872><+tempa>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var23(@exp.key[0])<+8><+872><+tempa>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var23(@exp.key[0])<+8><+872><+tempa>
+  var17<+72> := var17<+72> - var20<+96>
+  var19<+88> := var19<+88> + var20<+96>
+#!tempa := {#8}*{var16<+64>}
+  var23(@exp.key[0])<+8><+872><+tempa> := var17<+72>
+#!tempa := {#8}*{var18<+80>}
+  var23(@exp.key[0])<+8><+872><+tempa> := var19<+88>
+  temp277 := #1
+  var15<+56> := var15<+56> + temp277
+  GOTO label190
+LABEL label188 :
+  temp281 := #1
+  var15<+56> := temp281
+LABEL label201 :
+  temp283 := #24
+  IF var15<+56> < temp283 GOTO label200
+  GOTO label199
+LABEL label200 :
+#!tempa := {#8}*{var15<+56>}
+  var17<+72> := var23(@exp.key[0])<+8><+872><+tempa>
+  temp284 := #1
+  temp285 := var15<+56> - temp284
+  var16<+64> := temp285
+#!tempa := {#8}*{var16<+64>}
+  var20<+96> := var23(@exp.key[0])<+8><+872><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+#!tempa := {#8}*{var15<+56>}
+  var23(@exp.key[0])<+8><+872><+tempa> := var17<+72>
+  temp282 := #1
+  var15<+56> := var15<+56> + temp282
+  GOTO label201
+LABEL label199 :
+  temp287 := #0
+  var15<+56> := temp287
+LABEL label208 :
+  temp289 := #7
+  IF var15<+56> < temp289 GOTO label207
+  GOTO label206
+LABEL label207 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.L[0])<+200><+488><+tempa>
+  temp290 := #1
+  temp291 := var15<+56> + temp290
+  var18<+80> := temp291
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var22(@exp.L[0])<+200><+488><+tempa>
+  temp292 := var17<+72> ^ var19<+88>
+  var21<+104> := temp292
+  temp293 := #23
+  IF var21<+104> > temp293 GOTO label215
+  GOTO label214
+LABEL label215 :
+  temp294 := #23
+  var21<+104> := temp294
+LABEL label214 :
+#!tempa := {#8}*{var15<+56>}
+  var25(@exp.L[0])<+200><+1640><+tempa> := var21<+104>
+  temp288 := #1
+  var15<+56> := var15<+56> + temp288
+  GOTO label208
+LABEL label206 :
+  temp296 := #0
+  var25(@exp.L[7])<+256><+1640> := temp296
+  temp297 := #0
+  var15<+56> := temp297
+LABEL label219 :
+  temp299 := #7
+  IF var15<+56> < temp299 GOTO label218
+  GOTO label217
+LABEL label218 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.R[0])<+264><+488><+tempa>
+  temp300 := #1
+  temp301 := var15<+56> + temp300
+  var18<+80> := temp301
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var22(@exp.R[0])<+264><+488><+tempa>
+  temp302 := var17<+72> ^ var19<+88>
+  var21<+104> := temp302
+  temp303 := #23
+  IF var21<+104> > temp303 GOTO label226
+  GOTO label225
+LABEL label226 :
+  temp304 := #23
+  var21<+104> := temp304
+LABEL label225 :
+#!tempa := {#8}*{var15<+56>}
+  var25(@exp.R[0])<+264><+1640><+tempa> := var21<+104>
+  temp298 := #1
+  var15<+56> := var15<+56> + temp298
+  GOTO label219
+LABEL label217 :
+  temp306 := #23
+  var25(@exp.R[7])<+320><+1640> := temp306
+  temp307 := #0
+  var15<+56> := temp307
+LABEL label230 :
+  temp309 := #7
+  IF var15<+56> < temp309 GOTO label229
+  GOTO label228
+LABEL label229 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var22(@exp.X[0])<+328><+488><+tempa>
+  temp310 := #1
+  temp311 := var15<+56> + temp310
+  var18<+80> := temp311
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var22(@exp.X[0])<+328><+488><+tempa>
+  temp312 := var17<+72> ^ var19<+88>
+  var21<+104> := temp312
+#!tempa := {#8}*{var15<+56>}
+  var25(@exp.X[0])<+328><+1640><+tempa> := var21<+104>
+  temp308 := #1
+  var15<+56> := var15<+56> + temp308
+  GOTO label230
+LABEL label228 :
+  temp314 := #12
+  var25(@exp.X[7])<+384><+1640> := temp314
+  temp316 := #127
+  var25(@exp.key[0])<+8><+1640> := temp316
+  temp318 := #111
+  var25(@exp.key[1])<+16><+1640> := temp318
+  temp320 := #188
+  var25(@exp.key[2])<+24><+1640> := temp320
+  temp322 := #174
+  var25(@exp.key[3])<+32><+1640> := temp322
+  temp324 := #195
+  var25(@exp.key[4])<+40><+1640> := temp324
+  temp326 := #128
+  var25(@exp.key[5])<+48><+1640> := temp326
+  temp328 := #88
+  var25(@exp.key[6])<+56><+1640> := temp328
+  temp330 := #121
+  var25(@exp.key[7])<+64><+1640> := temp330
+  temp332 := #123
+  var25(@exp.key[8])<+72><+1640> := temp332
+  temp334 := #103
+  var25(@exp.key[9])<+80><+1640> := temp334
+  temp336 := #57
+  var25(@exp.key[10])<+88><+1640> := temp336
+  temp338 := #123
+  var25(@exp.key[11])<+96><+1640> := temp338
+  temp340 := #97
+  var25(@exp.key[12])<+104><+1640> := temp340
+  temp342 := #74
+  var25(@exp.key[13])<+112><+1640> := temp342
+  temp344 := #37
+  var25(@exp.key[14])<+120><+1640> := temp344
+  temp346 := #59
+  var25(@exp.key[15])<+128><+1640> := temp346
+  temp348 := #21
+  var25(@exp.key[16])<+136><+1640> := temp348
+  temp350 := #47
+  var25(@exp.key[17])<+144><+1640> := temp350
+  temp352 := #54
+  var25(@exp.key[18])<+152><+1640> := temp352
+  temp354 := #28
+  var25(@exp.key[19])<+160><+1640> := temp354
+  temp356 := #49
+  var25(@exp.key[20])<+168><+1640> := temp356
+  temp358 := #55
+  var25(@exp.key[21])<+176><+1640> := temp358
+  var25(@exp.key[22])<+184><+1640> := var1<+8>
+  temp361 := #125
+  var25(@exp.key[23])<+192><+1640> := temp361
+  temp362 := #23
+  var15<+56> := temp362
+LABEL label263 :
+  temp364 := #0
+  IF var15<+56> > temp364 GOTO label262
+  GOTO label261
+LABEL label262 :
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var25(@exp.key[0])<+8><+1640><+tempa>
+  var16<+64> := var15<+56>
+  temp365 := #1
+  var16<+64> := var16<+64> - temp365
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var25(@exp.key[0])<+8><+1640><+tempa>
+  temp367 := var19<+88> - var17<+72>
+  var21<+104> := temp367
+#!tempa := {#8}*{var15<+56>}
+  var25(@exp.key[0])<+8><+1640><+tempa> := var21<+104>
+  temp363 := #1
+  var15<+56> := var15<+56> - temp363
+  GOTO label263
+LABEL label261 :
+  temp368 := #0
+  var15<+56> := temp368
+LABEL label272 :
+  temp370 := #8
+  IF var15<+56> < temp370 GOTO label271
+  GOTO label270
+LABEL label271 :
+#!tempa := {#8}*{var15<+56>}
+  var16<+64> := var25(@exp.L[0])<+200><+1640><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var18<+80> := var25(@exp.R[0])<+264><+1640><+tempa>
+#!tempa := {#8}*{var15<+56>}
+  var20<+96> := var25(@exp.X[0])<+328><+1640><+tempa>
+#!tempa := {#8}*{var16<+64>}
+  var17<+72> := var25(@exp.key[0])<+8><+1640><+tempa>
+#!tempa := {#8}*{var18<+80>}
+  var19<+88> := var25(@exp.key[0])<+8><+1640><+tempa>
+  var17<+72> := var17<+72> - var20<+96>
+  var19<+88> := var19<+88> + var20<+96>
+#!tempa := {#8}*{var16<+64>}
+  var25(@exp.key[0])<+8><+1640><+tempa> := var17<+72>
+#!tempa := {#8}*{var18<+80>}
+  var25(@exp.key[0])<+8><+1640><+tempa> := var19<+88>
+  temp369 := #1
+  var15<+56> := var15<+56> + temp369
+  GOTO label272
+LABEL label270 :
+  temp373 := #1
+  var15<+56> := temp373
+LABEL label283 :
+  temp375 := #24
+  IF var15<+56> < temp375 GOTO label282
+  GOTO label281
+LABEL label282 :
+#!tempa := {#8}*{var15<+56>}
+  var17<+72> := var25(@exp.key[0])<+8><+1640><+tempa>
+  temp376 := #1
+  temp377 := var15<+56> - temp376
+  var16<+64> := temp377
+#!tempa := {#8}*{var16<+64>}
+  var20<+96> := var25(@exp.key[0])<+8><+1640><+tempa>
+  var17<+72> := var17<+72> + var20<+96>
+#!tempa := {#8}*{var15<+56>}
+  var25(@exp.key[0])<+8><+1640><+tempa> := var17<+72>
+  temp374 := #1
+  var15<+56> := var15<+56> + temp374
+  GOTO label283
+LABEL label281 :
+  temp379 := #0
+  var12<+32> := temp379
+  temp380 := #0
+  var13<+40> := temp380
+  temp381 := #0
+  var15<+56> := temp381
+LABEL label292 :
+  temp382 := #24
+  IF var15<+56> < temp382 GOTO label291
+  GOTO label290
+LABEL label291 :
+  var16<+64> := var15<+56>
+#!tempa := {#8}*{var15<+56>}
+  var12<+32> := var22(@exp.key[0])<+8><+488><+tempa>
+  var18<+80> := var15<+56>
+#!tempa := {#8}*{var18<+80>}
+  var13<+40> := var23(@exp.key[0])<+8><+872><+tempa>
+  IF var13<+40> != var12<+32> GOTO label298
+  GOTO label297
+LABEL label298 :
+  temp383 := CALL writef
+  temp384 := CALL exit
+LABEL label297 :
+  temp385 := #1
+  temp386 := var15<+56> + temp385
+  var15<+56> := temp386
+  GOTO label292
+LABEL label290 :
+  temp387 := CALL writes
+  temp388 := CALL exit
+LABEL Flabelmain :
