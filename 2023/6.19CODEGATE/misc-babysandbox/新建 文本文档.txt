@@ -1,0 +1,3 @@
+Protecting our system is totally more important than a single flag.
+
+Keep your program from being pwned.
