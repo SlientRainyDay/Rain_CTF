@@ -1,0 +1,5 @@
+
+
+Right，the flag is NepCTF[YourInput]
+
+but remember don't input too much
