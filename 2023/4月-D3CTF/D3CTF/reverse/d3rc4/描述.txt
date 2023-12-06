@@ -1,0 +1,1 @@
+simple rc4! but it seems a little strange... plz wrap your flag with antd3ctf{}
