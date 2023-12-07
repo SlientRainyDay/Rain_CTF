@@ -21,11 +21,19 @@
 
 ## RE
 
+> 截至目前，因为cos存储下行流量不足的原因，图片链接均已失效，初试完后会迁移图床。
 
+- [ELF文件格式](https://github.com/SlientRainyDay/Rain_CTF/blob/main/reverse/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/ELF.md)
+- [花指令](https://github.com/SlientRainyDay/Rain_CTF/blob/main/reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/%E8%8A%B1%E6%8C%87%E4%BB%A4.md)
+- [python代码保护](https://github.com/SlientRainyDay/Rain_CTF/tree/main/reverse/python%E4%BB%A3%E7%A0%81%E4%BF%9D%E6%8A%A4)
+- [z3](https://github.com/SlientRainyDay/Rain_CTF/blob/main/reverse/z3/z3.md)
+- [angr](https://github.com/SlientRainyDay/Rain_CTF/blob/main/reverse/angr/angr.md)
+- [插桩—pin](https://github.com/SlientRainyDay/Rain_CTF/blob/main/reverse/%E6%8F%92%E6%A1%A9/Pin%20%E5%8A%A8%E6%80%81%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%8F%92%E6%A1%A9.md)
+- [llvm](https://github.com/SlientRainyDay/Rain_CTF/tree/main/reverse/llvm)
 
 
 
 ## PWN
 
-
+- [ZIO](https://github.com/SlientRainyDay/Rain_CTF/blob/main/pwn/ZIO/ZIO.md)
 
