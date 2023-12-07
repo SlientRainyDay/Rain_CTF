@@ -37,3 +37,19 @@
 
 - [ZIO](https://github.com/SlientRainyDay/Rain_CTF/blob/main/pwn/ZIO/ZIO.md)
 
+
+
+
+
+## 工控
+
+> 因为入门工控时间较短，以前也没有记笔记的习惯，所以从未整理过工控相关知识，笔者留存了一些之前的参考资料及一些题目的wp，大部分为网上下载，如有侵权请联系我删除。
+
+工控一般题型就是流量分析、套壳逆向及梯形图分析(一般考计算也不是很难)，稍微专业一些的工控比赛可能会涉及专业工具如力控、AutoThink等，因为笔者没有向这方面发展的想法，对此类工具了解也不是很深，所以下面工控专业工具一栏暂时为空，如果以后学到了笔者会回来及时补充。
+
+- [工控常见题型介绍](https://github.com/SlientRainyDay/Rain_CTF/tree/main/%E5%B7%A5%E6%8E%A7/%E5%B7%A5%E6%8E%A7%E5%B8%B8%E8%A7%81%E9%A2%98%E5%9E%8B%E4%BB%8B%E7%BB%8D)
+- [工控协议](https://github.com/SlientRainyDay/Rain_CTF/tree/main/%E5%B7%A5%E6%8E%A7/%E5%B7%A5%E6%8E%A7%E5%8D%8F%E8%AE%AE)
+- [工控逆向](https://github.com/SlientRainyDay/Rain_CTF/blob/main/%E5%B7%A5%E6%8E%A7/%E5%B7%A5%E6%8E%A7%E9%80%86%E5%90%91/%E6%81%B6%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90.pdf)
+- [梯形图](https://github.com/SlientRainyDay/Rain_CTF/tree/main/%E5%B7%A5%E6%8E%A7/wp%E6%94%B6%E9%9B%86/%E6%A2%AF%E5%BD%A2%E5%9B%BE)
+- 工控工具
+
